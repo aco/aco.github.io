@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Menlo Regular';
+  src: local('Menlo Regular'), url('font/Menlo-Regular.woff') format('woff');
+}
+
+body {
+  font-family: 'Menlo-Regular';
+  font-size: 0.75rem;
+  margin: 0;
+  height: 100%;
+}
+
+#content {
+  padding: 4rem;
+}
+
+h1 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+li { 
+  margin: 1rem 0;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+hr {
+  border: 0;
+  margin: 1.1rem 0;
+}
+
+hr:before {
+  content: ' ';
+  font-size: 0.75rem;
+  color: #b5b5b5;
+}
+
+a,
+a:visited { 
+  color: #333;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a:active,
+a:hover {
+  color: #aaab9f;
+  transition: 0.2s;
+}
+
+small {
+  color: #999;
+}
+
+span::before {
+  content: '·';
+  margin: 0 0.5rem;;
+}

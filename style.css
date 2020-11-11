@@ -1,62 +1,79 @@
-@font-face {
-  font-family: 'Menlo Regular';
-  src: local('Menlo Regular'), url('font/Menlo-Regular.woff') format('woff');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,500,900');
+
+* {
+	margin: 0;
 }
 
 body {
-  font-family: 'Menlo-Regular';
-  font-size: 0.75rem;
-  margin: 0;
-  height: 100%;
+	font-size: 12px;
+	font-family: 'Raleway', sans-serif;
+	user-select: none;
 }
 
-#content {
-  padding: 4rem;
+.content-inner {
+	background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+	height: 100vh;
+	min-height: 500px;
+	position: relative;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	padding: 0;
+}
+
+.content-center {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 h1 {
-  font-size: 1rem;
-  text-transform: uppercase;
+	color: #ebedee;
+	text-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+	font-size: 12.5rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
 }
 
-li { 
-  margin: 1rem 0;
+a {
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 0.3rem;
+	text-transform: uppercase;
+	text-align: center;
+	color: #6e6e6e;
 }
 
-ul {
-  list-style: none;
-  padding-left: 0;
+.box {
+	position: relative;
 }
 
-hr {
-  border: 0;
-  margin: 1.1rem 0;
-}
-
-hr:before {
-  content: ' ';
-  font-size: 0.75rem;
-  color: #b5b5b5;
-}
-
-a,
-a:visited { 
-  color: #333;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-a:active,
-a:hover {
-  color: #aaab9f;
-  transition: 0.2s;
+.tag {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
 }
 
 small {
-  color: #999;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	color: rgba(153, 153, 153, 0.75);
 }
 
-span::before {
-  content: '·';
-  margin: 0 0.5rem;;
+ul {
+	margin: 0;
+	padding: 10px;
+	list-style: none;
+}
+
+li {
+	margin: 1rem 2rem;
+	display: inline-block;
+	padding: 1em;
 }
